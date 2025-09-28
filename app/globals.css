@@ -1,0 +1,82 @@
+/* Outdated CSS patterns */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+/* Outdated vendor prefixes */
+.example {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* Outdated float layout */
+.legacy-layout {
+  width: 100%;
+}
+
+.legacy-layout::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.legacy-column {
+  float: left;
+  width: 50%;
+}
+
+/* Outdated IE hacks */
+.ie-hack {
+  *zoom: 1; /* IE6/7 */
+  _zoom: 1; /* IE6 */
+}
+
+/* Outdated flexbox fallback */
+.flexbox-legacy {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Outdated media queries */
+@media screen and (max-width: 768px) {
+  .legacy-column {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}

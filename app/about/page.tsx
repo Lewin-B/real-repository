@@ -1,4 +1,11 @@
 import React from "react";
+import { cookies, headers } from "next/headers";
+
+const cookieStore = cookies(); // synchronous
+const token = cookieStore.get("token");
+
+const hdrs = headers(); // synchronous
+const userAgent = hdrs.get("user-agent");
 
 // Outdated interface pattern
 interface Props {
